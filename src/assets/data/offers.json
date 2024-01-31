@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "background": "#D3CDC3",
+    "textColor": "#514834",
+    "image": "lamp.png",
+    "line1": "Discount",
+    "line2": "70%",
+    "line3": "All Chandeliers"
+  },
+  {
+    "id": "2",
+    "background": "#B4D3E0",
+    "textColor": "#514834",
+    "image": "lamp.png",
+    "line1": "Discount",
+    "line2": "70%",
+    "line3": "All Chandeliers"
+  }
+]
