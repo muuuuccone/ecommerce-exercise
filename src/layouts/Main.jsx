@@ -34,7 +34,7 @@ export const Main = ({children}) => {
     return (
         <Box sx={{position: 'relative'}}>
             <Container sx={{pt:3, pb:1}}>
-                <Stack justifyContent={'space-between'} direction={'row'}>
+                <Stack justifyContent={'space-between'} direction={'row'} alignItems={'center'}>
                     <Box>
                         <IconButton sx={{color:'#35373B'}}>
                             <QrCodeScanner/>

@@ -1,9 +1,10 @@
 import React from "react";
 import {Box, Button, Card, CardContent, Grid, Stack, Typography} from "@mui/material";
-import popular from '../../assets/data/popular.json'
+import products from '../../assets/data/products.json'
 import {SliderCard} from "./OfferCards/SliderCard.jsx";
 import Slider from "react-slick";
 import {AddShoppingCart, Star, StarBorder, StarHalf} from "@mui/icons-material";
+import {Link} from "react-router-dom";
 
 const PopularCard = ({content}) => {
     const {id, image, category, name, stars, price} = content
@@ -45,7 +46,7 @@ const PopularCard = ({content}) => {
                             }
                         </Box>
                         <Stack justifyContent={'space-between'} direction={'row'} alignItems={'center'} sx={{pt:2}}>
-                            <Typography variant={'h4'} fontWeight={'bold'}>€{price}</Typography>
+                            <Typography variant={'h4'} fontWeight={'bold'}>€{price.toString().split(".")[1] ? price : price+".00"}</Typography>
                             <Box>
                                 <Button variant={'contained'} sx={{aspectRatio:'1/1', borderRadius:'50rem', boxShadow:'none !important'}}>
                                     <AddShoppingCart/>
@@ -78,8 +79,8 @@ export const PopularProducts = () => {
           </Box>
           <Box sx={{pt:"3rem"}}>
               <Slider {...settings}>
-                  {popular.map(o =>
-                      <Box key={o.id} sx={{px:1}}>
+                  {products.filter(p => p.popular).map(o =>
+                      <Box key={o.id} sx={{px:1, textDecoration:'none'}} component={Link} to={`/product/${o.id}`}>
                           <PopularCard content={o}/>
                       </Box>
                   )}

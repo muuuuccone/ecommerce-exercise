@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tilst-chair",
+    "category": "Primera Chairs",
+    "popular": true,
+    "name" : "TILST Chair",
+    "colors": [
+      {
+        "id":"beige",
+        "color":"#e4cfb1"
+      },
+      {
+        "id": "stripes",
+        "color": "linear-gradient(45deg, #000000 0%, #000000 50%, #ffffff 50%, #ffffff 100%)"
+      },
+      {
+        "id": "yellow",
+        "color": "yellow"
+      }
+    ],
+    "price": 79.00,
+    "stars": 4,
+    "description": "One of our old icons is now wearing a classy outfit.",
+    "image": "/assets/products/tilst-chair/beige.png"
+  },
+  {
+    "id": "wooden-chair",
+    "category": "Chairs",
+    "popular": true,
+    "name": "Wooden Chair",
+    "price": 39.00,
+    "stars": 1,
+    "image": "https://www.picng.com/upload/chair/png_chair_48010.png"
+  },
+  {
+    "id": "pouf",
+    "category": "Accessories",
+    "popular": true,
+    "name": "Pouf",
+    "price": 12.00,
+    "stars": 1.5,
+    "image": "https://images.squarespace-cdn.com/content/v1/5591a996e4b0e6440c8b3418/1600273935309-EKSE4F3IVRCKRGSYD4DU/Fredericia_DT_%C3%B855_leather301_1_FAIR.png?format=1000w"
+  }
+]
