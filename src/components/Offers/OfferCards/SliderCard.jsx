@@ -16,7 +16,7 @@ export const SliderCard = ({content}) => {
                  <Typography variant={'h6'} color={textColor}>
                      {line1}
                  </Typography>
-                 <Typography variant={'h1'} fontWeight={'400'} color={textColor} sx={{lineHeight:'3rem'}}>
+                 <Typography variant={'h1'} fontWeight={'400'} color={textColor} sx={{lineHeight: {xs:'3rem', md:'5rem'}}}>
                     {line2}
                  </Typography>
                  <Typography color={textColor}>

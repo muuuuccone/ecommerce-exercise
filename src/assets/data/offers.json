@@ -4,6 +4,7 @@
     "background": "#D3CDC3",
     "textColor": "#514834",
     "image": "lamp.png",
+    "bkgImage": "lamp-bkg.jpeg",
     "line1": "Discount",
     "line2": "70%",
     "line3": "All Chandeliers"
@@ -12,9 +13,10 @@
     "id": "2",
     "background": "#B4D3E0",
     "textColor": "#514834",
-    "image": "lamp.png",
+    "image": "beige.png",
+    "bkgImage": "chair-bkg.jpeg",
     "line1": "Discount",
-    "line2": "70%",
-    "line3": "All Chandeliers"
+    "line2": "30%",
+    "line3": "All Chairs"
   }
 ]

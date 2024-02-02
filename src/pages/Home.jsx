@@ -11,7 +11,7 @@ import {Offers} from "../components/Home/Offers.jsx";
 const WelcomeScreen = ({...props}) => {
     const {setShopping} = props
     return (
-        <Box sx={{position: 'relative'}}>
+        <Box sx={{position: 'relative', lineHeight:0}}>
             <Box sx={{position: 'absolute', top: 0, left: 0, zIndex: 2, height: '100%'}}>
                 <Stack sx={{px: 3, py: 10, height: '100%'}} justifyContent={'space-between'}>
                     <Typography variant={'h1'} fontWeight={'bold'} color={'white'}>
@@ -66,8 +66,8 @@ export const Home = () => {
                     <Box>
                         <TabList onChange={handleChangeSection} centered>
                             <Tab sx={{textTransform:"none"}} label="Offers" value="1"/>
-                            <Tab sx={{textTransform:"none"}} label="What's new" value="2"/>
-                            <Tab sx={{textTransform:"none"}} label="Hot sales" value="3"/>
+                            <Tab sx={{textTransform:"none"}} label="What's new" value="2" disabled/>
+                            <Tab sx={{textTransform:"none"}} label="Hot sales" value="3" disabled/>
                         </TabList>
                     </Box>
                     <TabPanel value="1" sx={{px:0}}>
